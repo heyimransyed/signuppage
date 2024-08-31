@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,intial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background: rgb(34,193,195);
+                background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            }
+            table{
+                border: 2px solid rgb(57, 58, 52);
+            }
+            span{
+                display: none;
+            }
+
+            input:hover+span{
+                display: inline;
+                background-color: greenyellow;
+                color: black;
+                font-size:large ;
+                font-family:monospace;
+            }
+
+            input[type="radio"]:checked{
+                height: 20px;
+                width: 20px;
+            }
+            
+            input[type="radio"]:checked+p{
+                color: red;
+                font-size: larger;
+                font-family:monospace ;
+            }
+
+            p{
+                display:inline;
+            }
+
+            input:focus{
+                background-color: rgb(41, 208, 203);
+            }
+
+            input:disabled{
+                background-color: black;
+            }
+
+            img{
+                display: none;
+            }
+
+            input[type = "email"]:focus:valid ~ img.valid{
+                display: inline;
+                width: 18px;
+                height: 18px;
+            }
+
+            input[type = "email"]:focus:invalid ~ img.invalid{
+                display: inline;
+                width: 18px;
+                height: 18px;
+            }
+
+
+
+           
+        </style>
+    </head>
+    <body>
+        
+         <table>     
+         <h1>Sign up form</h1>
+            <form action="response.html">
+                <tr>
+                    <td><lable>Name</lable></td>
+                    <td><input type="text" size="15" required><span>Enter Your Name</span></td>
+                </tr>
+                <tr>
+                    <td><label>College</label></td>
+                    <td><input type="text" name="college" size="15" disabled></td>
+                </tr>
+                <tr>
+                    <td><lable for="">Primary Email</lable></td>
+                    <td>
+                        <input type="email" required>
+                        <span>Enter Primary Email</span>
+                        <img class = "valid" src="images.html/icons8-tick-100.png">
+                        <img class = "invalid" src="images.html/icons8-wrong-100.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td><lable for="">Secondry Email</lable></td>
+                    <td><input type="email" required><span>Enter Secondry Email</span></td>
+                </tr>
+                <tr>
+                    <td><lable for="">Password</lable></td>
+                    <td><input type="password" required><span>Enter valid password</span></td>
+                </tr>
+                <tr>
+                    <td><lable for="">Gender</lable></td>
+                    <td><input type="radio" name="Gender" value="Male"><p>Male</p>
+                    <input type="radio" name="Gender" value="Female"><p>Female</p>
+                    <input type="radio" name="Gender" value="Others"><p>Others</p></td>
+                </tr>
+                <tr>
+                    <td><label for="">Age</label></td>
+                    <td>
+                        <input type="number" min="18" max="100">
+                        <span>Enter valid age</span>
+                    </td>
+                </tr> 
+                <tr>
+                    <td><label for="">Mod</label></td>
+                    <td>
+                        <input type="text" name="mod" value="Online" size="15" readonly>
+                        <span>Online mode is available</span> <br>
+                    </td>
+                </tr>
+        </table>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
